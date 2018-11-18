@@ -3,7 +3,7 @@ The Jupyter notebook contains code to predict whether an individual's income exc
 
 First, I use some visualizations to explore the data. 76.1% of individuals in the sample do not earn more than US$50000 a year (this serves as the baseline accuracy against which I will compare a machine learning model's accuracy later). The probability of earning more than US$50000 a year differs across variables such as sex and race; for example, men are more likely to earn more than US$50000 a year than women.
 
-Next, I recode the infrequent categories of all categorical variables to 'Others'. I define an infrequent category as one which occurs less than 5% of the time. I carry out this recoding exercise to avoid having too many variables after one-hot encoding the categorical variables.
+Next, I recode the infrequent categories of all categorical variables to 'Others'. I define an infrequent category as one which occurs less than 5% of the time. I carry out this recoding exercise to avoid having overly-sparse variables after one-hot encoding the categorical variables.
 
 After one-hot encoding the categorical variables, I conduct principal components analysis and add the first 3 principal components to the dataset, in the hope that they may serve as useful features for the machine learning model later. A correlation plot reveals that the first principal component is the feature most strongly correlated with the target variable (correlation coefficient = 0.47).
 
